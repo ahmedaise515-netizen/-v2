@@ -45,7 +45,7 @@ let control = async (m, { command, text, conn, bot, participants }) => {
             let user = getUser();
             if (!user) return m.reply("❌ منشن أو رد على العضو");
             await conn.groupParticipantsUpdate(m.chat, [user], 'promote');
-            return m.reply("✅ تم الرفع");
+            return m.reply("✅ تم رفعك ");
         }
         
         if (command === "خفض") {
